@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var inputUnit: VolumeUnits = VolumeUnits.milliliters
     @State private var outputUnit: VolumeUnits = VolumeUnits.liters
-    @State private var value: Double = 1000.0
+    @State private var value: Double = 0.0
     @FocusState private var valueIsFocused: Bool
     
     
@@ -30,41 +30,40 @@ struct ContentView: View {
     }
     
     var conversionResult: Double {
-        var result = value
+        let inputMeasurement: Measurement<UnitVolume>
+        let outputMeasurement: Measurement<UnitVolume>
         
-        // convert any input unit to milliliters
         switch(inputUnit) {
-            case .milliliters:
-                result *= 1
-            case .liters:
-                result *= 1000
-            case .ounces:
-                result *= 29.5735
-            case .cups:
-                result *= 240
-            case .pints:
-                result *= 473.176
-            case .gallons:
-                result *= 3785.41
+        case .milliliters:
+            inputMeasurement = Measurement(value: value, unit: UnitVolume.milliliters)
+        case .liters:
+            inputMeasurement = Measurement(value: value, unit: UnitVolume.liters)
+        case .ounces:
+            inputMeasurement = Measurement(value: value, unit: UnitVolume.fluidOunces)
+        case .cups:
+            inputMeasurement = Measurement(value: value, unit: UnitVolume.cups)
+        case .pints:
+            inputMeasurement = Measurement(value: value, unit: UnitVolume.pints)
+        case .gallons:
+            inputMeasurement = Measurement(value: value, unit: UnitVolume.gallons)
         }
         
-        // convert from milliliters to output unit
         switch(outputUnit) {
-            case .milliliters:
-                result /= 1
-            case .liters:
-                result /= 1000
-            case .ounces:
-                result /= 29.5735
-            case .cups:
-                result /= 240
-            case .pints:
-                result /= 473.176
-            case .gallons:
-                result /= 3785.41
+        case .milliliters:
+            outputMeasurement = inputMeasurement.converted(to: .milliliters)
+        case .liters:
+            outputMeasurement = inputMeasurement.converted(to: .liters)
+        case .ounces:
+            outputMeasurement = inputMeasurement.converted(to: .fluidOunces)
+        case .cups:
+            outputMeasurement = inputMeasurement.converted(to: .cups)
+        case .pints:
+            outputMeasurement = inputMeasurement.converted(to: .pints)
+        case .gallons:
+            outputMeasurement = inputMeasurement.converted(to: .gallons)
         }
         
-        return result
+        return outputMeasurement.value
     }
     
     var body: some View {
@@ -94,7 +93,7 @@ struct ContentView: View {
                 }
                 
                 Section {
-                    Text("\(conversionResult.formatted()) \(outputUnit.stringValue())")
+                    Text(conversionResult.formatted())
                 } header: {
                     Text("Converted Value")
                 }
