@@ -11,6 +11,7 @@ struct ContentView: View {
     @State private var inputUnit: VolumeUnits = VolumeUnits.milliliters
     @State private var outputUnit: VolumeUnits = VolumeUnits.liters
     @State private var value: Double = 1000.0
+    @FocusState private var valueIsFocused: Bool
     
     
     enum VolumeUnits: CaseIterable {
@@ -87,6 +88,7 @@ struct ContentView: View {
                 Section {
                     TextField("Value", value: $value, format: .number)
                         .keyboardType(.decimalPad)
+                        .focused($valueIsFocused)
                 } header: {
                     Text("Input Value")
                 }
@@ -99,6 +101,15 @@ struct ContentView: View {
             }
             .navigationTitle("Volume Conversion")
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    Spacer()
+                    
+                    Button("Done") {
+                        valueIsFocused = false
+                    }
+                }
+            }
         }
     }
 }
