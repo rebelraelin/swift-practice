@@ -11,14 +11,16 @@ struct ContentView: View {
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
     @State private var showingScore = false
+    @State private var gameFinished = false
     @State private var scoreTitle = ""
     @State private var score = 0
+    @State private var roundCounter = 0
     
     var body: some View {
         ZStack {
             RadialGradient(stops: [
-                .init(color: Color(red: 0.1, green: 0.2, blue: 0.45), location: 0.3),
-                .init(color: Color(red: 0.65, green: 0.15, blue: 0.15), location: 0.3)
+                .init(color: Color(red: 0.1, green: 0.3, blue: 0.7), location: 0.3),
+                .init(color: Color(red: 0.1, green: 0.6, blue: 0.7), location: 0.3)
             ], center: .top, startRadius: 200, endRadius: 700)
                 .ignoresSafeArea()
             VStack {
@@ -59,6 +61,9 @@ struct ContentView: View {
                 Text("Score: \(score)")
                     .font(.title.bold())
                     .foregroundColor(.white)
+                Text("Rounds left: \(8 - roundCounter)")
+                    .font(.title)
+                    .foregroundColor(.white)
                 
                 Spacer()
             }
@@ -68,6 +73,11 @@ struct ContentView: View {
             Button("Continue", action: askQuestion)
         } message: {
             Text("Your score is \(score)")
+        }
+        .alert(scoreTitle, isPresented: $gameFinished) {
+            Button("Restart", action: restartGame)
+        } message: {
+            Text("Your score is \(score)/8!")
         }
     }
     
@@ -79,12 +89,25 @@ struct ContentView: View {
             scoreTitle = "Incorrect! That's the flag of \(countries[number])"
         }
         
-        showingScore = true
+        roundCounter += 1
+        
+        if roundCounter == 8 {
+            gameFinished = true
+        } else {
+            showingScore = true
+        }
     }
     
     func askQuestion() {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
+    }
+    
+    func restartGame() {
+        countries.shuffle()
+        correctAnswer = Int.random(in: 0...2)
+        score = 0
+        roundCounter = 0
     }
 }
 
