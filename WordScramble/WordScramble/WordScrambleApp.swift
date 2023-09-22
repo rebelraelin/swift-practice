@@ -2,7 +2,7 @@
 //  WordScrambleApp.swift
 //  WordScramble
 //
-//  Created by Cayla Murdoch on 9/14/23.
+//  Created by Cayla Murdoch on 9/22/23.
 //
 
 import SwiftUI

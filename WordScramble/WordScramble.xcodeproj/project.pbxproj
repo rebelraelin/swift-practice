@@ -7,22 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E76B580C2AB3C76400D6C60E /* WordScrambleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76B580B2AB3C76400D6C60E /* WordScrambleApp.swift */; };
-		E76B580E2AB3C76400D6C60E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76B580D2AB3C76400D6C60E /* ContentView.swift */; };
-		E76B58102AB3C76700D6C60E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E76B580F2AB3C76700D6C60E /* Assets.xcassets */; };
-		E76B58132AB3C76700D6C60E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E76B58122AB3C76700D6C60E /* Preview Assets.xcassets */; };
+		E7DCB36E2ABE09B000F0C6F4 /* WordScrambleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCB36D2ABE09B000F0C6F4 /* WordScrambleApp.swift */; };
+		E7DCB3702ABE09B000F0C6F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCB36F2ABE09B000F0C6F4 /* ContentView.swift */; };
+		E7DCB3722ABE09B300F0C6F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7DCB3712ABE09B300F0C6F4 /* Assets.xcassets */; };
+		E7DCB3752ABE09B300F0C6F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7DCB3742ABE09B300F0C6F4 /* Preview Assets.xcassets */; };
+		E7DCB37C2ABE27D800F0C6F4 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = E7DCB37B2ABE27D800F0C6F4 /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E76B58082AB3C76400D6C60E /* WordScramble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordScramble.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E76B580B2AB3C76400D6C60E /* WordScrambleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleApp.swift; sourceTree = "<group>"; };
-		E76B580D2AB3C76400D6C60E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E76B580F2AB3C76700D6C60E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E76B58122AB3C76700D6C60E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E7DCB36A2ABE09B000F0C6F4 /* WordScramble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordScramble.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7DCB36D2ABE09B000F0C6F4 /* WordScrambleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleApp.swift; sourceTree = "<group>"; };
+		E7DCB36F2ABE09B000F0C6F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E7DCB3712ABE09B300F0C6F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7DCB3742ABE09B300F0C6F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E7DCB37B2ABE27D800F0C6F4 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E76B58052AB3C76400D6C60E /* Frameworks */ = {
+		E7DCB3672ABE09B000F0C6F4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,37 +34,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E76B57FF2AB3C76400D6C60E = {
+		E7DCB3612ABE09B000F0C6F4 = {
 			isa = PBXGroup;
 			children = (
-				E76B580A2AB3C76400D6C60E /* WordScramble */,
-				E76B58092AB3C76400D6C60E /* Products */,
+				E7DCB36C2ABE09B000F0C6F4 /* WordScramble */,
+				E7DCB36B2ABE09B000F0C6F4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E76B58092AB3C76400D6C60E /* Products */ = {
+		E7DCB36B2ABE09B000F0C6F4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E76B58082AB3C76400D6C60E /* WordScramble.app */,
+				E7DCB36A2ABE09B000F0C6F4 /* WordScramble.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E76B580A2AB3C76400D6C60E /* WordScramble */ = {
+		E7DCB36C2ABE09B000F0C6F4 /* WordScramble */ = {
 			isa = PBXGroup;
 			children = (
-				E76B580B2AB3C76400D6C60E /* WordScrambleApp.swift */,
-				E76B580D2AB3C76400D6C60E /* ContentView.swift */,
-				E76B580F2AB3C76700D6C60E /* Assets.xcassets */,
-				E76B58112AB3C76700D6C60E /* Preview Content */,
+				E7DCB36D2ABE09B000F0C6F4 /* WordScrambleApp.swift */,
+				E7DCB36F2ABE09B000F0C6F4 /* ContentView.swift */,
+				E7DCB37B2ABE27D800F0C6F4 /* start.txt */,
+				E7DCB3712ABE09B300F0C6F4 /* Assets.xcassets */,
+				E7DCB3732ABE09B300F0C6F4 /* Preview Content */,
 			);
 			path = WordScramble;
 			sourceTree = "<group>";
 		};
-		E76B58112AB3C76700D6C60E /* Preview Content */ = {
+		E7DCB3732ABE09B300F0C6F4 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				E76B58122AB3C76700D6C60E /* Preview Assets.xcassets */,
+				E7DCB3742ABE09B300F0C6F4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -70,13 +73,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E76B58072AB3C76400D6C60E /* WordScramble */ = {
+		E7DCB3692ABE09B000F0C6F4 /* WordScramble */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E76B58162AB3C76700D6C60E /* Build configuration list for PBXNativeTarget "WordScramble" */;
+			buildConfigurationList = E7DCB3782ABE09B300F0C6F4 /* Build configuration list for PBXNativeTarget "WordScramble" */;
 			buildPhases = (
-				E76B58042AB3C76400D6C60E /* Sources */,
-				E76B58052AB3C76400D6C60E /* Frameworks */,
-				E76B58062AB3C76400D6C60E /* Resources */,
+				E7DCB3662ABE09B000F0C6F4 /* Sources */,
+				E7DCB3672ABE09B000F0C6F4 /* Frameworks */,
+				E7DCB3682ABE09B000F0C6F4 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +87,25 @@
 			);
 			name = WordScramble;
 			productName = WordScramble;
-			productReference = E76B58082AB3C76400D6C60E /* WordScramble.app */;
+			productReference = E7DCB36A2ABE09B000F0C6F4 /* WordScramble.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E76B58002AB3C76400D6C60E /* Project object */ = {
+		E7DCB3622ABE09B000F0C6F4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					E76B58072AB3C76400D6C60E = {
-						CreatedOnToolsVersion = 14.3.1;
+					E7DCB3692ABE09B000F0C6F4 = {
+						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
-			buildConfigurationList = E76B58032AB3C76400D6C60E /* Build configuration list for PBXProject "WordScramble" */;
+			buildConfigurationList = E7DCB3652ABE09B000F0C6F4 /* Build configuration list for PBXProject "WordScramble" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,45 +113,47 @@
 				en,
 				Base,
 			);
-			mainGroup = E76B57FF2AB3C76400D6C60E;
-			productRefGroup = E76B58092AB3C76400D6C60E /* Products */;
+			mainGroup = E7DCB3612ABE09B000F0C6F4;
+			productRefGroup = E7DCB36B2ABE09B000F0C6F4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E76B58072AB3C76400D6C60E /* WordScramble */,
+				E7DCB3692ABE09B000F0C6F4 /* WordScramble */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E76B58062AB3C76400D6C60E /* Resources */ = {
+		E7DCB3682ABE09B000F0C6F4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E76B58132AB3C76700D6C60E /* Preview Assets.xcassets in Resources */,
-				E76B58102AB3C76700D6C60E /* Assets.xcassets in Resources */,
+				E7DCB3752ABE09B300F0C6F4 /* Preview Assets.xcassets in Resources */,
+				E7DCB37C2ABE27D800F0C6F4 /* start.txt in Resources */,
+				E7DCB3722ABE09B300F0C6F4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E76B58042AB3C76400D6C60E /* Sources */ = {
+		E7DCB3662ABE09B000F0C6F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E76B580E2AB3C76400D6C60E /* ContentView.swift in Sources */,
-				E76B580C2AB3C76400D6C60E /* WordScrambleApp.swift in Sources */,
+				E7DCB3702ABE09B000F0C6F4 /* ContentView.swift in Sources */,
+				E7DCB36E2ABE09B000F0C6F4 /* WordScrambleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		E76B58142AB3C76700D6C60E /* Debug */ = {
+		E7DCB3762ABE09B300F0C6F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -181,7 +186,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -195,20 +201,22 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		E76B58152AB3C76700D6C60E /* Release */ = {
+		E7DCB3772ABE09B300F0C6F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -241,7 +249,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -249,17 +258,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		E76B58172AB3C76700D6C60E /* Debug */ = {
+		E7DCB3792ABE09B300F0C6F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -287,7 +296,7 @@
 			};
 			name = Debug;
 		};
-		E76B58182AB3C76700D6C60E /* Release */ = {
+		E7DCB37A2ABE09B300F0C6F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -318,25 +327,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E76B58032AB3C76400D6C60E /* Build configuration list for PBXProject "WordScramble" */ = {
+		E7DCB3652ABE09B000F0C6F4 /* Build configuration list for PBXProject "WordScramble" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E76B58142AB3C76700D6C60E /* Debug */,
-				E76B58152AB3C76700D6C60E /* Release */,
+				E7DCB3762ABE09B300F0C6F4 /* Debug */,
+				E7DCB3772ABE09B300F0C6F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E76B58162AB3C76700D6C60E /* Build configuration list for PBXNativeTarget "WordScramble" */ = {
+		E7DCB3782ABE09B300F0C6F4 /* Build configuration list for PBXNativeTarget "WordScramble" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E76B58172AB3C76700D6C60E /* Debug */,
-				E76B58182AB3C76700D6C60E /* Release */,
+				E7DCB3792ABE09B300F0C6F4 /* Debug */,
+				E7DCB37A2ABE09B300F0C6F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E76B58002AB3C76400D6C60E /* Project object */;
+	rootObject = E7DCB3622ABE09B000F0C6F4 /* Project object */;
 }
