@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var usedWords = [String]()
     @State private var rootWord = ""
     @State private var newWord = ""
+    @State private var score = 0
     
     @State private var errorTitle = ""
     @State private var errorMessage = ""
@@ -47,6 +48,12 @@ struct ContentView: View {
                     Button("Restart", action: restart)
                 }
             }
+            .toolbar {
+                ToolbarItem(placement: .bottomBar) {
+                    Text("Score: \(score)")
+                        .font(.title.bold())
+                }
+            }
         }
     }
     
@@ -54,6 +61,7 @@ struct ContentView: View {
         rootWord = allWords.randomElement() ?? "silkworm"
         usedWords = []
         newWord = ""
+        score = 0
     }
     
     func addNewWord() {
@@ -87,6 +95,8 @@ struct ContentView: View {
         withAnimation {
             usedWords.insert(answer, at: 0)
         }
+        
+        score += newWord.count
         newWord = ""
     }
     
