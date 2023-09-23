@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var allWords = [String]()
     @State private var usedWords = [String]()
     @State private var rootWord = ""
     @State private var newWord = ""
@@ -41,7 +42,18 @@ struct ContentView: View {
             } message: {
                 Text(errorMessage)
             }
+            .toolbar {
+                ToolbarItem() {
+                    Button("Restart", action: restart)
+                }
+            }
         }
+    }
+    
+    func restart() {
+        rootWord = allWords.randomElement() ?? "silkworm"
+        usedWords = []
+        newWord = ""
     }
     
     func addNewWord() {
@@ -81,7 +93,7 @@ struct ContentView: View {
     func startGame() {
         if let startWordsURL = Bundle.main.url(forResource: "start", withExtension: "txt") {
             if let startWords = try? String(contentsOf: startWordsURL) {
-                let allWords = startWords.components(separatedBy: "\n")
+                allWords = startWords.components(separatedBy: "\n")
                 rootWord = allWords.randomElement() ?? "silkworm"
                 return
             }
